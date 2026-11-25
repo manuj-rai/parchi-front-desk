@@ -37,6 +37,8 @@ python -m parchi.server              then open http://127.0.0.1:8765
 
 On Windows, `working-slice\run.bat offline` does all of this and opens the browser. The intro page is at `/`, the call simulator at `/demo/`, and the staff app at `/app/` (test sign-ins: `doctor-test`, `reception-test`).
 
+**[A five-minute walkthrough](working-slice/DEMO.md)** shows why this piece, it working, and it failing, step by step.
+
 ## Tests
 
 From `working-slice/`:

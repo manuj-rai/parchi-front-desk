@@ -8,7 +8,7 @@ Deliverable 7. A live voice demo: you speak as a patient, Parchi answers aloud, 
 
 ![The call simulator during call 5: the caller on the left, what each agent decided and how long it took in the middle, the receptionist's token board and the doctor's alerts on the right](screenshots/simulator-call-5.png)
 
-More screenshots: [the intro page](screenshots/landing.png), [the staff app's call log](screenshots/staff-calls.png).
+More screenshots: [the intro page](screenshots/landing.png), [the staff app's call log](screenshots/staff-calls.png). To see it working and failing in five minutes, follow [the walkthrough](DEMO.md).
 
 ## Quick start
 
@@ -227,7 +227,7 @@ The brief allows 2 hours of build for the working slice. Measured from this sess
 | 24 November: the intro page, the console's new look, the call log, the doctor's dashboard and staff sign-in | not timed |
 | 25 November: each clinic as data (what the doctor treats, `not_here`), prompts and sentences in files, the doctor's clinic settings | not timed |
 
-That is over the cap. The recording should show the riskiest piece and say this plainly rather than hide it.
+That is over the cap, and it is said here plainly rather than hidden.
 
 ## What it showed
 
