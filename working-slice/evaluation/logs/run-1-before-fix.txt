@@ -1,0 +1,6 @@
+Run 1, 23 Nov 2026, models: gpt-4.1-mini (both agents). Before the prompt fix.
+intent right 16/18; urgent caught 4/4; false alarms 0/14; agent time median 1356 ms, worst 2996 ms.
+Misses:
+- "Number laga dijiye, mujhe doctor se akele mein baat karni hai. Is number pe message mat bhejna." -> intent other (should be book). Call 7.
+- "Hello, I am a medical representative. When is the doctor free to meet?" -> intent status (should be other). Would have told a sales rep the doctor's time: call 6.
+- Word list missed "seene mein thoda dard" (extra word); the safety agent caught it.

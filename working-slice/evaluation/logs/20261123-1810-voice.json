@@ -1,0 +1,62 @@
+[
+ {
+  "line": "status",
+  "transcript": "डॉक्टर साहब आ गए क्या?",
+  "route": "status",
+  "wall_ms": 3171,
+  "speech_to_text": 1219,
+  "agents": 1945,
+  "text_to_speech": 0,
+  "first_sound": 3164
+ },
+ {
+  "line": "book",
+  "transcript": "कल सुबह का नंबर लगा दो।",
+  "route": "book",
+  "wall_ms": 2875,
+  "speech_to_text": 1266,
+  "agents": 1598,
+  "text_to_speech": 0,
+  "first_sound": 2864
+ },
+ {
+  "line": "fees",
+  "transcript": "Consultation fees kitni hai?",
+  "route": "info",
+  "wall_ms": 3923,
+  "speech_to_text": 826,
+  "agents": 1441,
+  "text_to_speech": 1648,
+  "first_sound": 3915
+ },
+ {
+  "line": "chest-pain",
+  "transcript": "शाम का नंबर चाहिए, नाम रमेश, सुबह से सीने में थोड़ा दर्द है।",
+  "route": "urgent",
+  "wall_ms": 2496,
+  "speech_to_text": 991,
+  "agents": 1498,
+  "text_to_speech": 0,
+  "first_sound": 2489
+ },
+ {
+  "line": "robot",
+  "transcript": "आपरो और हो क्या?",
+  "route": "handoff",
+  "wall_ms": 2070,
+  "speech_to_text": 793,
+  "agents": 1270,
+  "text_to_speech": 0,
+  "first_sound": 2063
+ },
+ {
+  "line": "dont-message",
+  "transcript": "नंबर लगा दो, पर इस नंबर पर मैसेज मत भेजना।",
+  "route": "book",
+  "wall_ms": 2382,
+  "speech_to_text": 934,
+  "agents": 1441,
+  "text_to_speech": 0,
+  "first_sound": 2375
+ }
+]

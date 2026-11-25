@@ -1,0 +1,9 @@
+End-to-end voice test after the multi-provider restructure, 23 Nov 2026.
+Speech made by TTS, posted to the running server. Served by: openai:gpt-4o-mini-transcribe, openai:gpt-4.1-mini (both agents), openai:gpt-4o-mini-tts.
+- "Doctor sahab aa gaye kya?"     -> status.  stt 1054 + agents 1876 + tts 0 (pre-made audio) = 2,930 ms   (was 3,793)
+- "...seene mein thoda dard hai." -> urgent.  stt 1659 + agents 1350 + tts 2613 = 5,622 ms
+- "Aap robot ho kya?"             -> honest.  stt 1224 + agents 1809 + tts 2236 = 5,269 ms
+Note: the front-desk agent read the chest-pain caller as "medical" this time (as "book" before), so no token was made.
+The emergency path was identical. The result is not stable run to run: one more reason the 18-line test is too small.
+Fixed before this run: provider packages are now loaded at start-up (a cold import of langchain-openai took 7.5 s and
+landed on the first caller).

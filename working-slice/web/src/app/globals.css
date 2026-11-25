@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+/* Design tokens: one palette for the intro page and the console. Lavender and violet for the
+   surfaces and the accent; red, green and turmeric carry meaning only (see lib/labels.ts).
+   Every text colour passes WCAG AA (4.5:1) on the surfaces it is used on. */
+@theme {
+  --color-lilac: #cdcdf3;        /* the backdrop pages float on */
+  --color-haze: #f4f3fd;         /* the page sheet; quiet areas inside cards */
+  --color-frost: #ffffff;        /* cards */
+  --color-mist: #ecebf8;         /* inset areas: inputs, tracks */
+  --color-night: #1e1f55;        /* deep indigo: primary text */
+  --color-night-soft: #565a86;   /* secondary text */
+  --color-night-faint: #6c6f95;  /* labels, meta */
+  --color-night-ghost: #b0b2cc;  /* disabled marks, placeholders */
+  --color-rule: #e6e4f5;         /* hairlines */
+  --color-rule-strong: #d2cfea;
+  --color-iris: #6b5cf0;         /* violet: the accent, and the front-desk agent */
+  --color-iris-deep: #5444d6;    /* violet text on light violet */
+  --color-iris-wash: #ebe8fe;
+  --color-orchid: #9447e6;       /* the far end of the violet gradient */
+  --color-dusk: #2d2b8a;         /* the deep indigo card */
+  --color-stamp: #c3302f;        /* rubber-stamp red: danger and the 2-second limit */
+  --color-stamp-wash: #fbebea;
+  --color-wall: #276d4b;         /* clinic-wall green: fresh, within the limit */
+  --color-wall-wash: #e6f2eb;
+  --color-haldi: #93600f;        /* turmeric: unsure, callback, ageing */
+  --color-haldi-wash: #fbf2df;
+
+  --font-sans: var(--font-plex-sans), var(--font-plex-devanagari), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  color-scheme: light;
+}
+
+body {
+  background: var(--color-lilac);
+  color: var(--color-night);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* A token slip torn from a pad: perforated top edge. A parchi is that slip. */
+.slip {
+  background-color: var(--color-frost);
+  background-image: radial-gradient(circle at 4px -1px, var(--color-haze) 2.5px, transparent 3px);
+  background-size: 8px 6px;
+  background-repeat: repeat-x;
+}
+
+/* Intro page: a faint grid behind the hero, fading out towards the edges. */
+.landing-grid {
+  background-image:
+    linear-gradient(color-mix(in oklab, var(--color-night) 7%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in oklab, var(--color-night) 7%, transparent) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 35%, black 30%, transparent 100%);
+}
+
+/* A voice, talking: the headline pill on the intro page, and the talk button while recording. */
+@keyframes talk {
+  from { transform: scaleY(0.3); }
+  to { transform: scaleY(1); }
+}
+.voice-bar { animation: talk 0.9s ease-in-out infinite alternate; transform-origin: center; }
+
+/* Intro page: the call on the phone plays out once, line by line, as the page loads. */
+@keyframes arrive {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+.arrive { animation: arrive 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+
+/* The app's charts and rings: columns grow from the baseline once, as the page loads. */
+@keyframes rise {
+  from { transform: scaleY(0); }
+  to { transform: none; }
+}
+.rise { animation: rise 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both; transform-origin: bottom; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition-duration: 0ms !important; }
+}

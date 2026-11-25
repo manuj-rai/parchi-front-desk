@@ -1,0 +1,108 @@
+# The kinds of health problem a caller may mention. Shared by every clinic.
+#
+# Each clinic file lists the areas its doctor treats. For any other area, Parchi gives no
+# token and no hope: it says, in `see`, which kind of doctor to go to instead.
+#
+#   label      what the front-desk agent must copy back exactly (it chooses from these)
+#   describes  helps the agent match what callers actually say
+#   spoken     how Parchi names the problem out loud
+#   see        who Parchi tells the caller to see, out loud
+#   words      used ONLY by the stand-in models in offline test mode, never by the real agents
+
+[fever-cough-cold]
+label = "fever, cough and cold"
+describes = "fever, cough, cold, flu, sore body with fever, viral infection"
+spoken = "bukhar, khansi ya zukaam"
+see = "kisi general physician"
+words = ["bukhar", "fever", "khansi", "cough", "zukaam", "jukam", "बुखार", "खांसी", "ज़ुकाम", "बुख़ार"]
+
+[stomach]
+label = "stomach and digestion"
+describes = "stomach pain, loose motions, acidity, gas, vomiting, constipation"
+spoken = "pet ki takleef"
+see = "kisi general physician"
+words = ["pet", "stomach", "dast", "loose motion", "acidity", "gas", "पेट", "दस्त"]
+
+[aches]
+label = "body ache and headache"
+describes = "headache, body ache, back ache, weakness, tiredness"
+spoken = "sar dard ya badan dard"
+see = "kisi general physician"
+words = ["sar dard", "sir dard", "headache", "badan dard", "body ache", "kamar dard", "सर दर्द", "सिर दर्द", "बदन दर्द"]
+
+[bp-diabetes]
+label = "blood pressure and diabetes"
+describes = "blood pressure, sugar, diabetes, regular check-ups for these"
+spoken = "BP ya sugar"
+see = "kisi general physician"
+words = ["bp", "blood pressure", "sugar", "diabetes", "शुगर", "बीपी"]
+
+[heart-chest-breathing]
+label = "heart, chest and breathing"
+describes = "asthma, breathlessness on effort, wheezing, inhaler refills, palpitations, a known heart condition and its follow-up (sudden chest pain or trouble breathing is an emergency instead)"
+spoken = "dil, chhati ya saans ki takleef"
+see = "kisi general physician"
+words = ["asthma", "dama", "dame", "dhadkan", "inhaler", "दमा", "धड़कन"]
+
+[injuries]
+label = "minor injuries and dressing"
+describes = "small cuts, wounds, burns, dressings, stitches removal"
+spoken = "chhoti chot ya patti"
+see = "kisi general physician"
+words = ["chot", "patti", "dressing", "cut lag", "jal gaya", "चोट", "पट्टी"]
+
+[children]
+label = "children's illnesses"
+describes = "illness in a baby or young child: fever, cough, loose motions, vaccines"
+spoken = "bachchon ki bimari"
+see = "bachchon ke doctor"
+words = ["bachche", "bachcha", "baby", "beti", "beta", "बच्चे", "बच्चा"]
+
+[skin]
+label = "skin, hair and allergies"
+describes = "rashes, itching, pimples, hair fall, skin allergy"
+spoken = "skin ki takleef"
+see = "skin ke doctor"
+words = ["khujli", "rash", "daane", "pimple", "baal jhad", "itching", "खुजली", "दाने"]
+
+[teeth]
+label = "teeth and gums"
+describes = "toothache, cavity, filling, root canal, bleeding or swollen gums, braces, dentures, mouth ulcers"
+spoken = "daant ki takleef"
+see = "daant ke doctor"
+words = ["daant", "dant", "teeth", "tooth", "masoode", "masude", "दांत", "दाँत", "मसूड़े"]
+
+[ent]
+label = "ear, nose and throat"
+describes = "ear pain or discharge, hearing loss, blocked or running nose, sinus, nosebleed, sore throat, tonsils, voice"
+spoken = "kaan, naak ya gale ki takleef"
+see = "kaan-naak-gale ke doctor"
+words = ["kaan", "naak", "gala", "gale", "tonsil", "sunai", "ear", "nose", "throat", "कान", "नाक", "गला", "गले"]
+
+[eyes]
+label = "eyes"
+describes = "eye pain, red eyes, blurred vision, spectacles, cataract"
+spoken = "aankh ki takleef"
+see = "aankh ke doctor"
+words = ["aankh", "ankh", "eye", "chashma", "आंख", "आँख"]
+
+[pregnancy]
+label = "pregnancy and women's health"
+describes = "pregnancy, periods, delivery, family planning"
+spoken = "pregnancy ya mahilaon ki takleef"
+see = "mahila rog ki doctor"
+words = ["pregnant", "pregnancy", "periods", "mahina", "garbh", "प्रेग्नेंट", "गर्भ"]
+
+[bones]
+label = "bones, joints and fractures"
+describes = "fracture, joint pain, knee pain, sprain, plaster"
+spoken = "haddi ya jodon ki takleef"
+see = "haddi ke doctor"
+words = ["haddi", "fracture", "ghutna", "ghutne", "joint", "moch", "हड्डी", "घुटने"]
+
+[mental-health]
+label = "mental health"
+describes = "stress, sadness, anxiety, sleep problems, addiction"
+spoken = "mann ki pareshani"
+see = "mann ke doctor"
+words = ["tension", "depression", "neend nahi", "ghabrahat", "घबराहट"]

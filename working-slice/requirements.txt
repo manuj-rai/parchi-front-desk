@@ -1,0 +1,14 @@
+# Orchestration and agents
+langgraph==1.2.24
+langchain-core==1.8.4
+# Model providers (a provider is only used when its API key is set)
+langchain-openai==1.8.5
+langchain-anthropic==1.7.12
+langchain-google-genai==4.5.2
+openai==3.57.0
+httpx                       # Deepgram speech-to-text over its REST API (installed with openai)
+# Server and settings
+fastapi==0.115.14
+uvicorn==0.31.1
+pydantic==2.13.4
+pydantic-settings==2.16.3   # typed, validated settings from .env and the environment

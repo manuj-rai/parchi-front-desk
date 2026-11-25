@@ -1,0 +1,17 @@
+# Signs that mean "go to hospital now". They apply at EVERY clinic, whatever the doctor
+# treats: a dental clinic still sends a caller with chest pain to the emergency department.
+#
+#   signs     what the safety agent listens for
+#   keywords  a plain word list beside the safety agent; either one raises the alarm.
+#             Roman, Devanagari and Urdu script: transcripts have come back in all three.
+#   say       the exact sentence, approved by a doctor
+
+approved_by = "Parchi's clinical lead, 20 Nov 2026 (demo)"
+signs = "chest pain, trouble breathing, fainting, fits, heavy bleeding, sudden weakness on one side, swelling of the face or throat with trouble breathing"
+keywords = [
+    "seene", "chhati", "chest pain", "saans", "sans lene", "breathing", "behosh", "daura",
+    "fits", "khoon", "bleeding", "lakwa",
+    "सीने", "सीना", "छाती", "सांस", "साँस", "बेहोश", "दौरा", "खून", "लकवा",
+    "سینے", "سینہ", "چھاتی", "سانس", "بیہوش", "دورہ", "خون", "لقوہ",
+]
+say = "Yeh intezaar wali baat nahin hai. Abhi sabse paas ke aspataal ki emergency mein jaaiye. Main doctor sahab ko bhi abhi bata rahi hoon."

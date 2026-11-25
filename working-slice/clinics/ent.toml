@@ -1,0 +1,23 @@
+# One clinic: who it is, what its doctor treats, and the doctor's own urgency rules.
+# Made-up demo data. In the product, the doctor reads and signs this file's contents.
+# (The brief's receptionist Sunita works at an ENT clinic in Indore.)
+
+name = "Shravan ENT Clinic"
+kind = "kaan, naak aur gale ka clinic"
+receptionist = "Sunita"
+address = "Near Palasia Square, Indore."
+fees = "Consultation 400 rupees. Hearing test 500 rupees."
+timings = "Morning 11 to 2, evening 6 to 8. Sunday closed."
+posted_start = "11:00"
+closed_days = ["Sunday"]                    # no tokens are booked for these days
+
+[doctor]
+name = "Dr. Joshi"
+speciality = "ENT surgeon"
+treats = ["ent"]
+
+[see_today]
+approved_by = "Dr. Joshi, 20 Nov 2026 (demo)"
+signs = "sudden loss of hearing, something stuck in the ear or nose, ear pain with discharge and fever in a child, a nosebleed that keeps coming back"
+keywords = ["sunai nahi", "sunai dena band", "phans gaya", "fans gaya", "kaan beh", "kaan se paani", "सुनाई नहीं", "फंस गया"]
+say = "Doctor sahab ke niyam ke hisaab se ise aaj hi dikhana chahiye. Agar saans mein dikkat ho ya khoon na ruke, to turant aspataal jaaiye."

@@ -1,0 +1,680 @@
+{
+ "summary": {
+  "models": "openai:gpt-4o-mini",
+  "intent right": "50/51 (98%)",
+  "'don't message me' right": "51/51 (100%)",
+  "urgent caught (model or words)": "12/12 (100%)",
+  "urgent caught by the model alone": "10/12 (83%)",
+  "urgent caught by the words alone": "12/12 (100%)",
+  "false alarms (model or words)": "4/39 (10%)",
+  "false alarms from the model": "0/39 (0%)",
+  "false alarms from the words": "4/39 (10%)",
+  "agent time, median": "1345 ms",
+  "agent time, 90th percentile": "1918 ms"
+ },
+ "cases": [
+  {
+   "id": "call-1",
+   "ms": 1970,
+   "intent": "status",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "status-2",
+   "ms": 1382,
+   "intent": "status",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "status-3",
+   "ms": 1183,
+   "intent": "status",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "status-4",
+   "ms": 1249,
+   "intent": "status",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "status-5",
+   "ms": 1224,
+   "intent": "status",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "status-6",
+   "ms": 1173,
+   "intent": "status",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "book-1",
+   "ms": 1331,
+   "intent": "book",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "book-2",
+   "ms": 1441,
+   "intent": "book",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "book-3",
+   "ms": 2422,
+   "intent": "book",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "call-7",
+   "ms": 1253,
+   "intent": "book",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "call-7-devanagari",
+   "ms": 1238,
+   "intent": "book",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "book-6",
+   "ms": 1570,
+   "intent": "book",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "book-7",
+   "ms": 1603,
+   "intent": "book",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "info-1",
+   "ms": 1101,
+   "intent": "info",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "info-2",
+   "ms": 1181,
+   "intent": "info",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "info-3",
+   "ms": 1466,
+   "intent": "info",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "info-4",
+   "ms": 1305,
+   "intent": "info",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "info-5",
+   "ms": 1082,
+   "intent": "info",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "call-3",
+   "ms": 1383,
+   "intent": "report",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "report-2",
+   "ms": 1414,
+   "intent": "report",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "report-3",
+   "ms": 1220,
+   "intent": "report",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "call-4",
+   "ms": 1122,
+   "intent": "other",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "call-6",
+   "ms": 1603,
+   "intent": "other",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "other-3",
+   "ms": 1126,
+   "intent": "other",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "other-4",
+   "ms": 1288,
+   "intent": "other",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "other-5",
+   "ms": 1918,
+   "intent": "other",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "other-6",
+   "ms": 1076,
+   "intent": "other",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "about-1",
+   "ms": 1690,
+   "intent": "about_assistant",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "about-2",
+   "ms": 1304,
+   "intent": "about_assistant",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "unclear-1",
+   "ms": 1353,
+   "intent": "other",
+   "intent_ok": false,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "unclear-2",
+   "ms": 1302,
+   "intent": "unclear",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "unclear-3",
+   "ms": 1119,
+   "intent": "unclear",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "medical-1",
+   "ms": 1293,
+   "intent": "medical",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "medical-2",
+   "ms": 1222,
+   "intent": "medical",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "medical-3",
+   "ms": 1201,
+   "intent": "medical",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "call-5",
+   "ms": 1532,
+   "intent": "book",
+   "intent_ok": true,
+   "urgent": true,
+   "model_alarm": true,
+   "word_alarm": true,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "call-5-devanagari",
+   "ms": 1292,
+   "intent": "book",
+   "intent_ok": true,
+   "urgent": true,
+   "model_alarm": true,
+   "word_alarm": true,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "emergency-3",
+   "ms": 1972,
+   "intent": "medical",
+   "intent_ok": true,
+   "urgent": true,
+   "model_alarm": true,
+   "word_alarm": true,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "emergency-4",
+   "ms": 1488,
+   "intent": "medical",
+   "intent_ok": true,
+   "urgent": true,
+   "model_alarm": true,
+   "word_alarm": true,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "emergency-5",
+   "ms": 1612,
+   "intent": "medical",
+   "intent_ok": true,
+   "urgent": true,
+   "model_alarm": true,
+   "word_alarm": true,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "emergency-6",
+   "ms": 1432,
+   "intent": "medical",
+   "intent_ok": true,
+   "urgent": true,
+   "model_alarm": false,
+   "word_alarm": true,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "emergency-7",
+   "ms": 1259,
+   "intent": "medical",
+   "intent_ok": true,
+   "urgent": true,
+   "model_alarm": true,
+   "word_alarm": true,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "emergency-8",
+   "ms": 1295,
+   "intent": "medical",
+   "intent_ok": true,
+   "urgent": true,
+   "model_alarm": true,
+   "word_alarm": true,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "call-2",
+   "ms": 1345,
+   "intent": "medical",
+   "intent_ok": true,
+   "urgent": true,
+   "model_alarm": true,
+   "word_alarm": true,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "see-today-2",
+   "ms": 1989,
+   "intent": "medical",
+   "intent_ok": true,
+   "urgent": true,
+   "model_alarm": true,
+   "word_alarm": true,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "see-today-3",
+   "ms": 1430,
+   "intent": "medical",
+   "intent_ok": true,
+   "urgent": true,
+   "model_alarm": true,
+   "word_alarm": true,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "see-today-4",
+   "ms": 1946,
+   "intent": "medical",
+   "intent_ok": true,
+   "urgent": true,
+   "model_alarm": false,
+   "word_alarm": true,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "harmless-1",
+   "ms": 1415,
+   "intent": "report",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": true,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "harmless-2",
+   "ms": 1861,
+   "intent": "info",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": true,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "harmless-3",
+   "ms": 1411,
+   "intent": "report",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": true,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  },
+  {
+   "id": "harmless-4",
+   "ms": 1522,
+   "intent": "report",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": true,
+   "no_messages_ok": true,
+   "models": [
+    "openai:gpt-4o-mini"
+   ]
+  }
+ ]
+}

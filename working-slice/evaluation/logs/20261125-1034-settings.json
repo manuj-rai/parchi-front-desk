@@ -1,0 +1,1302 @@
+{
+ "summary": {
+  "models": "openai:gpt-4.1-mini, openai:gpt-5.4-mini",
+  "turns where a model failed": "0/64 (0%)",
+  "intent right": "64/64 (100%)",
+  "'don't message me' right": "64/64 (100%)",
+  "scope right (treated here or not)": "12/13 (92%)",
+  "false hope: not treated, read as treated": "0/8 (0%)",
+  "urgent caught (model or words)": "14/14 (100%)",
+  "urgent caught by the model alone": "13/14 (93%)",
+  "urgent caught by the words alone": "14/14 (100%)",
+  "false alarms (model or words)": "4/50 (8%)",
+  "false alarms from the model": "0/50 (0%)",
+  "false alarms from the words": "4/50 (8%)",
+  "agent time, median": "1426.5 ms",
+  "  front-desk agent alone, median": "1406.5 ms",
+  "  safety agent alone, median": "840.0 ms",
+  "agent time, 90th percentile": "1601 ms"
+ },
+ "cases": [
+  {
+   "id": "call-1",
+   "ms": 1685,
+   "intent": "status",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1681,
+   "safety_ms": 1299,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "status-2",
+   "ms": 1565,
+   "intent": "status",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1564,
+   "safety_ms": 710,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "status-3",
+   "ms": 1352,
+   "intent": "status",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1350,
+   "safety_ms": 772,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "status-4",
+   "ms": 1304,
+   "intent": "status",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1298,
+   "safety_ms": 978,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "status-5",
+   "ms": 1382,
+   "intent": "status",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1381,
+   "safety_ms": 841,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "status-6",
+   "ms": 1375,
+   "intent": "status",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1374,
+   "safety_ms": 913,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "book-1",
+   "ms": 1104,
+   "intent": "book",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1103,
+   "safety_ms": 784,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "book-2",
+   "ms": 1950,
+   "intent": "book",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1936,
+   "safety_ms": 921,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "book-3",
+   "ms": 1193,
+   "intent": "book",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1192,
+   "safety_ms": 1043,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "call-7",
+   "ms": 1535,
+   "intent": "book",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1534,
+   "safety_ms": 884,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "call-7-devanagari",
+   "ms": 1292,
+   "intent": "book",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1291,
+   "safety_ms": 939,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "book-6",
+   "ms": 1199,
+   "intent": "book",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1198,
+   "safety_ms": 957,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "book-7",
+   "ms": 1288,
+   "intent": "book",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1286,
+   "safety_ms": 832,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "info-1",
+   "ms": 1601,
+   "intent": "info",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1600,
+   "safety_ms": 851,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "info-2",
+   "ms": 1445,
+   "intent": "info",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1406,
+   "safety_ms": 652,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "info-3",
+   "ms": 1225,
+   "intent": "info",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1224,
+   "safety_ms": 873,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "info-4",
+   "ms": 1136,
+   "intent": "info",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1135,
+   "safety_ms": 737,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "info-5",
+   "ms": 1147,
+   "intent": "info",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1144,
+   "safety_ms": 789,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "call-3",
+   "ms": 1319,
+   "intent": "report",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1316,
+   "safety_ms": 712,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "report-2",
+   "ms": 1487,
+   "intent": "report",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "unknown",
+   "no_messages_ok": true,
+   "front_desk_ms": 1474,
+   "safety_ms": 1068,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "report-3",
+   "ms": 1535,
+   "intent": "report",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1533,
+   "safety_ms": 832,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "call-4",
+   "ms": 1783,
+   "intent": "other",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1753,
+   "safety_ms": 900,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "call-6",
+   "ms": 1403,
+   "intent": "other",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1401,
+   "safety_ms": 809,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "other-3",
+   "ms": 1248,
+   "intent": "other",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1246,
+   "safety_ms": 813,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "other-4",
+   "ms": 3554,
+   "intent": "other",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 3553,
+   "safety_ms": 826,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "other-5",
+   "ms": 1323,
+   "intent": "other",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1321,
+   "safety_ms": 811,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "other-6",
+   "ms": 1407,
+   "intent": "other",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1406,
+   "safety_ms": 952,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "about-1",
+   "ms": 1388,
+   "intent": "about_assistant",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1387,
+   "safety_ms": 839,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "about-2",
+   "ms": 1391,
+   "intent": "about_assistant",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1390,
+   "safety_ms": 848,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "unclear-1",
+   "ms": 1345,
+   "intent": "unclear",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1344,
+   "safety_ms": 865,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "unclear-2",
+   "ms": 1397,
+   "intent": "unclear",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1390,
+   "safety_ms": 867,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "unclear-3",
+   "ms": 1332,
+   "intent": "unclear",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1327,
+   "safety_ms": 857,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "medical-1",
+   "ms": 1359,
+   "intent": "book",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "treated",
+   "no_messages_ok": true,
+   "front_desk_ms": 1358,
+   "safety_ms": 749,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "medical-2",
+   "ms": 1548,
+   "intent": "medical",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "treated",
+   "no_messages_ok": true,
+   "front_desk_ms": 1546,
+   "safety_ms": 1085,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "medical-3",
+   "ms": 1336,
+   "intent": "medical",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "treated",
+   "no_messages_ok": true,
+   "front_desk_ms": 1333,
+   "safety_ms": 973,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "call-5",
+   "ms": 1523,
+   "intent": "book",
+   "intent_ok": true,
+   "urgent": true,
+   "model_alarm": true,
+   "word_alarm": true,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "unknown",
+   "no_messages_ok": true,
+   "front_desk_ms": 1483,
+   "safety_ms": 1251,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "call-5-devanagari",
+   "ms": 1592,
+   "intent": "book",
+   "intent_ok": true,
+   "urgent": true,
+   "model_alarm": true,
+   "word_alarm": true,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "unknown",
+   "no_messages_ok": true,
+   "front_desk_ms": 1532,
+   "safety_ms": 945,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "emergency-3",
+   "ms": 1933,
+   "intent": "medical",
+   "intent_ok": true,
+   "urgent": true,
+   "model_alarm": true,
+   "word_alarm": true,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "unknown",
+   "no_messages_ok": true,
+   "front_desk_ms": 1851,
+   "safety_ms": 996,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "emergency-4",
+   "ms": 2795,
+   "intent": "medical",
+   "intent_ok": true,
+   "urgent": true,
+   "model_alarm": true,
+   "word_alarm": true,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "unknown",
+   "no_messages_ok": true,
+   "front_desk_ms": 2691,
+   "safety_ms": 1333,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "emergency-5",
+   "ms": 1938,
+   "intent": "medical",
+   "intent_ok": true,
+   "urgent": true,
+   "model_alarm": true,
+   "word_alarm": true,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "treated",
+   "no_messages_ok": true,
+   "front_desk_ms": 1937,
+   "safety_ms": 824,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "emergency-6",
+   "ms": 1391,
+   "intent": "medical",
+   "intent_ok": true,
+   "urgent": true,
+   "model_alarm": true,
+   "word_alarm": true,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "not_treated",
+   "no_messages_ok": true,
+   "front_desk_ms": 1390,
+   "safety_ms": 758,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "emergency-7",
+   "ms": 1575,
+   "intent": "medical",
+   "intent_ok": true,
+   "urgent": true,
+   "model_alarm": true,
+   "word_alarm": true,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "unknown",
+   "no_messages_ok": true,
+   "front_desk_ms": 1573,
+   "safety_ms": 823,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "emergency-8",
+   "ms": 1478,
+   "intent": "medical",
+   "intent_ok": true,
+   "urgent": true,
+   "model_alarm": true,
+   "word_alarm": true,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "unknown",
+   "no_messages_ok": true,
+   "front_desk_ms": 1471,
+   "safety_ms": 803,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "call-2",
+   "ms": 1521,
+   "intent": "medical",
+   "intent_ok": true,
+   "urgent": true,
+   "model_alarm": true,
+   "word_alarm": true,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "treated",
+   "no_messages_ok": true,
+   "front_desk_ms": 1519,
+   "safety_ms": 979,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "see-today-2",
+   "ms": 1472,
+   "intent": "medical",
+   "intent_ok": true,
+   "urgent": true,
+   "model_alarm": true,
+   "word_alarm": true,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "treated",
+   "no_messages_ok": true,
+   "front_desk_ms": 1469,
+   "safety_ms": 788,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "see-today-3",
+   "ms": 1578,
+   "intent": "medical",
+   "intent_ok": true,
+   "urgent": true,
+   "model_alarm": true,
+   "word_alarm": true,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "treated",
+   "no_messages_ok": true,
+   "front_desk_ms": 1577,
+   "safety_ms": 851,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "see-today-4",
+   "ms": 1491,
+   "intent": "medical",
+   "intent_ok": true,
+   "urgent": true,
+   "model_alarm": false,
+   "word_alarm": true,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "treated",
+   "no_messages_ok": true,
+   "front_desk_ms": 1490,
+   "safety_ms": 851,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "harmless-1",
+   "ms": 1361,
+   "intent": "report",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": true,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "none",
+   "no_messages_ok": true,
+   "front_desk_ms": 1360,
+   "safety_ms": 739,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "harmless-2",
+   "ms": 1572,
+   "intent": "info",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": true,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "treated",
+   "no_messages_ok": true,
+   "front_desk_ms": 1569,
+   "safety_ms": 802,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "harmless-3",
+   "ms": 1566,
+   "intent": "report",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": true,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "unknown",
+   "no_messages_ok": true,
+   "front_desk_ms": 1565,
+   "safety_ms": 758,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "harmless-4",
+   "ms": 1582,
+   "intent": "report",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": true,
+   "clinic": "general-physician",
+   "scope_expected": null,
+   "scope": "unknown",
+   "no_messages_ok": true,
+   "front_desk_ms": 1581,
+   "safety_ms": 862,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "scope-gp-teeth",
+   "ms": 1378,
+   "intent": "book",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": "not_treated",
+   "scope": "not_treated",
+   "no_messages_ok": true,
+   "front_desk_ms": 1377,
+   "safety_ms": 748,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "scope-gp-eyes",
+   "ms": 1446,
+   "intent": "book",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": "not_treated",
+   "scope": "not_treated",
+   "no_messages_ok": true,
+   "front_desk_ms": 1444,
+   "safety_ms": 913,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "scope-gp-pregnancy",
+   "ms": 1601,
+   "intent": "book",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": "not_treated",
+   "scope": "not_treated",
+   "no_messages_ok": true,
+   "front_desk_ms": 1600,
+   "safety_ms": 940,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "scope-gp-stomach",
+   "ms": 1408,
+   "intent": "book",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": "treated",
+   "scope": "treated",
+   "no_messages_ok": true,
+   "front_desk_ms": 1407,
+   "safety_ms": 768,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "scope-gp-bp",
+   "ms": 1376,
+   "intent": "book",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "general-physician",
+   "scope_expected": "treated",
+   "scope": "treated",
+   "no_messages_ok": true,
+   "front_desk_ms": 1375,
+   "safety_ms": 1063,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "scope-dental-tooth",
+   "ms": 1446,
+   "intent": "book",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "dental",
+   "scope_expected": "treated",
+   "scope": "treated",
+   "no_messages_ok": true,
+   "front_desk_ms": 1439,
+   "safety_ms": 815,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "scope-dental-child-fever",
+   "ms": 1321,
+   "intent": "book",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "dental",
+   "scope_expected": "not_treated",
+   "scope": "not_treated",
+   "no_messages_ok": true,
+   "front_desk_ms": 1319,
+   "safety_ms": 730,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "scope-dental-stomach",
+   "ms": 1451,
+   "intent": "book",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "dental",
+   "scope_expected": "not_treated",
+   "scope": "not_treated",
+   "no_messages_ok": true,
+   "front_desk_ms": 1450,
+   "safety_ms": 841,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "scope-dental-chest-pain",
+   "ms": 1505,
+   "intent": "medical",
+   "intent_ok": true,
+   "urgent": true,
+   "model_alarm": true,
+   "word_alarm": true,
+   "clinic": "dental",
+   "scope_expected": "not_treated",
+   "scope": "unknown",
+   "no_messages_ok": true,
+   "front_desk_ms": 1504,
+   "safety_ms": 734,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "scope-ent-ear",
+   "ms": 1263,
+   "intent": "book",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "ent",
+   "scope_expected": "treated",
+   "scope": "treated",
+   "no_messages_ok": true,
+   "front_desk_ms": 1257,
+   "safety_ms": 640,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "scope-ent-knee",
+   "ms": 1364,
+   "intent": "book",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "ent",
+   "scope_expected": "not_treated",
+   "scope": "not_treated",
+   "no_messages_ok": true,
+   "front_desk_ms": 1363,
+   "safety_ms": 706,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "scope-ent-eyes",
+   "ms": 1466,
+   "intent": "medical",
+   "intent_ok": true,
+   "urgent": false,
+   "model_alarm": false,
+   "word_alarm": false,
+   "clinic": "ent",
+   "scope_expected": "not_treated",
+   "scope": "not_treated",
+   "no_messages_ok": true,
+   "front_desk_ms": 1465,
+   "safety_ms": 575,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  },
+  {
+   "id": "scope-ent-sudden-deafness",
+   "ms": 1519,
+   "intent": "medical",
+   "intent_ok": true,
+   "urgent": true,
+   "model_alarm": true,
+   "word_alarm": true,
+   "clinic": "ent",
+   "scope_expected": "treated",
+   "scope": "treated",
+   "no_messages_ok": true,
+   "front_desk_ms": 1518,
+   "safety_ms": 706,
+   "failures": [],
+   "models": [
+    "openai:gpt-4.1-mini",
+    "openai:gpt-5.4-mini"
+   ]
+  }
+ ]
+}

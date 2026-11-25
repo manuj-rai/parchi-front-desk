@@ -1,0 +1,25 @@
+# One clinic: who it is, what its doctor treats, and the doctor's own urgency rules.
+# Made-up demo data. In the product, the doctor reads and signs this file's contents.
+
+name = "Demo Clinic"
+kind = "general physician ka clinic"        # spoken: "yeh <kind> hai"
+receptionist = "Sunita"
+address = "Shop 4, Main Road, near Rajwada, Indore."
+fees = "Consultation 300 rupees. Follow-up within 7 days free."
+timings = "Morning 10 to 1, evening 5 to 8. Sunday closed."
+posted_start = "10:00"
+closed_days = ["Sunday"]                    # no tokens are booked for these days
+
+[doctor]
+name = "Dr. Sharma"
+speciality = "General physician"
+# Problem areas this doctor treats (ids from problem-areas.toml). For every other area,
+# Parchi tells the caller who to see instead and gives no token.
+treats = ["fever-cough-cold", "stomach", "aches", "bp-diabetes", "heart-chest-breathing", "injuries", "children", "skin"]
+
+# The doctor's own rules for problems this clinic treats that should not wait.
+[see_today]
+approved_by = "Dr. Sharma, 20 Nov 2026 (demo)"
+signs = "fever in a child under five, fever of 102 or more, vomiting that will not stop, severe pain"
+keywords = ["bukhar", "fever", "ulti", "vomit", "tez dard", "बुखार", "उल्टी", "तेज़ दर्द", "तेज दर्द", "بخار", "الٹی", "تیز درد"]
+say = "Doctor sahab ke niyam ke hisaab se ise aaj hi dikhana chahiye, shaam tak mat rukiye. Agar saans mein dikkat ho, bahut susti ho ya daura pade, to turant aspataal jaaiye."

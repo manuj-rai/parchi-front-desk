@@ -1,0 +1,22 @@
+# One clinic: who it is, what its doctor treats, and the doctor's own urgency rules.
+# Made-up demo data. In the product, the doctor reads and signs this file's contents.
+
+name = "Muskaan Dental Clinic"
+kind = "daant ka clinic"
+receptionist = "Pooja"
+address = "First floor, Sapna Sangeeta Road, Indore."
+fees = "Check-up 200 rupees. Cleaning 800 rupees. Root canal priced after the check-up."
+timings = "Morning 10 to 2, evening 6 to 9. Thursday closed."
+posted_start = "10:00"
+closed_days = ["Thursday"]                    # no tokens are booked for these days
+
+[doctor]
+name = "Dr. Mehta"
+speciality = "Dentist"
+treats = ["teeth"]
+
+[see_today]
+approved_by = "Dr. Mehta, 20 Nov 2026 (demo)"
+signs = "toothache bad enough to stop sleep, swelling of the face or gums, a broken or knocked-out tooth, bleeding that will not stop after a tooth removal"
+keywords = ["sujan", "soojan", "suja", "toot gaya", "tut gaya", "neend nahi", "सूजन", "टूट गया", "سوجن"]
+say = "Doctor sahab ke niyam ke hisaab se ise aaj hi dikhana chahiye. Agar chehre ki sujan badhe ya saans mein dikkat ho, to turant aspataal jaaiye."

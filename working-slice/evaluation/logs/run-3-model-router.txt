@@ -1,0 +1,24 @@
+ok  2705 ms  intent=status          conf=0.95  safety=none      words=none       Doctor sahab aa gaye kya?
+ok  1475 ms  intent=status          conf=0.95  safety=none      words=none       doctor kab tak aayenge, kitna time lagega
+ok  1652 ms  intent=medical         conf=0.90  safety=see_today words=see_today  Mera bachcha do saal ka hai, kal raat se 102 bukhar hai. A
+ok  1328 ms  intent=report          conf=0.90  safety=none      words=none       Main Verma bol raha hoon, pichle hafte aaya tha, report aa
+ok  1326 ms  intent=other           conf=1.00  safety=none      words=none       Sharma ji ka beta bol raha hoon. Doctor sahab ko bol dena 
+ok  2034 ms  intent=book            conf=0.90  safety=emergency words=emergency  Shaam ka number lagwana hai follow-up ke liye, naam Ramesh
+ok  1348 ms  intent=book            conf=0.95  safety=none      words=none      no-msg  Number laga dijiye, mujhe doctor se akele mein baat karni 
+ok  1533 ms  intent=other           conf=0.90  safety=none      words=none       Hello, I am a medical representative. When is the doctor f
+ok  1121 ms  intent=info            conf=1.00  safety=none      words=none       consultation fees kitni hai?
+ok  1077 ms  intent=info            conf=0.90  safety=none      words=none       Sunday ko clinic khula rehta hai?
+ok  1399 ms  intent=about_assistant conf=1.00  safety=none      words=none       aap robot ho kya? insaan se baat karao
+ok  1597 ms  intent=unclear         conf=0.40  safety=none      words=none       haan woh... matlab... kal wala
+ok  1625 ms  intent=medical         conf=0.95  safety=emergency words=emergency  Meri maa ko saans lene mein bahut takleef ho rahi hai
+ok  1355 ms  intent=medical         conf=0.90  safety=emergency words=emergency  Papa subah behosh ho gaye the, ab theek hain
+ok  1439 ms  intent=book            conf=0.90  safety=none      words=none       kal subah ka number laga do
+ok  1424 ms  intent=medical         conf=0.90  safety=none      words=none       pet mein halka sa dard hai do din se, kab dikha sakte hain
+ok  1352 ms  intent=other           conf=1.00  safety=none      words=none       galat number lag gaya sorry
+ok  1153 ms  intent=status          conf=0.90  safety=none      words=none       ek minute... haan, doctor baithe hain abhi?
+
+models that served: openai:gpt-4.1-mini
+intent right      : 18/18
+urgent caught     : 4/4   (recall must be 100% to switch on a clinic)
+false alarms      : 0/14
+agent time (ms)   : median 1412, worst 2705   (speech-to-text and text-to-speech come on top)

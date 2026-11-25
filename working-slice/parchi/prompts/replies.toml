@@ -1,0 +1,80 @@
+# Every fixed sentence Parchi speaks, in one place, so the wording can be checked and
+# corrected without touching code. Romanised Hindi; English gloss in the comment above each.
+# {placeholders} are filled from the clinic's file (clinics/*.toml) or from the call.
+# Sentences without a number in them are turned into audio once at start-up, so they play instantly.
+
+# "Hello, I am Parchi, from <clinic>. <the doctor's status, from the board> Tell me, how can I help you?"
+# The status comes first because 44% of calls ask only that: they are answered before asking.
+greeting = "Namaste, main Parchi, {clinic} se. {status} Boliye, main aapki kya madad kar sakti hoon?"
+
+# "Yes, one second." Played the instant the caller stops talking, so there is no silence.
+filler = "Ji, ek second."
+
+# "Yes, done."
+booked = "Ji, ho gaya."
+
+# "Your number is <n>."
+token_number = "Aapka number {number} hai."
+# "Your number is <n>, for <tomorrow / Monday>." A booking on a later day.
+token_number_on = "Aapka number {number} hai, {day} ke liye."
+
+# The caller's own bookings, read from the appointment book (never from a model).
+# "Your token is already booked." (Asked again from the same number, for the same person.)
+already_booked = "Aapka number pehle se laga hua hai."
+# "Your number <n> is being seen now."
+booking_seeing = "Aapka number {number} abhi chal raha hai."
+# "The doctor has already seen your number <n> today."
+booking_seen = "Aaj aapka number {number} ho chuka hai."
+# "No token is booked from this number. Tell me if you would like one."
+no_booking = "Is number se koi number nahin laga hai. Number lagwana ho to bataiye."
+# "Yes, your number <n> for <today / tomorrow> is cancelled."
+cancelled = "Ji, {day} ka aapka number {number} cancel kar diya hai."
+# "No token is booked from this number, so there is nothing to cancel."
+nothing_to_cancel = "Is number se koi number nahin laga hai, to cancel karne ko kuch nahin hai."
+
+# "No message or call will come to this number, so please remember your number: <n>."
+no_contact = "Is number par koi message ya call nahin aayega, isliye number yaad rakhiye: {number}."
+
+# "I am passing you to <receptionist>. She will call you back on this number shortly."
+handoff = "Main aapki baat {receptionist} ji tak pahuncha rahi hoon. Wo aapko isi number par thodi der mein phone karengi."
+
+# "I can't advise on this, but I am passing your question to the doctor right now."
+no_advice = "Main is par salah nahin de sakti, par aapka sawaal abhi doctor sahab tak pahuncha rahi hoon."
+
+# Said only when asked: "Yes, I am Parchi, <clinic>'s AI assistant. This call is recorded, and the
+# doctor reviews it. Would you like me to connect you to <receptionist>?"
+about = "Ji, main Parchi hoon, {clinic} ki AI sahayak. Yeh call record hoti hai, aur doctor sahab ise final review karte hain. Aap chahein to main aapki baat {receptionist} ji se karwa doon?"
+
+# No false hope. "Sorry, this is <a dental clinic>; <fever> is not treated here. Please see <a general physician>."
+not_here = "Maaf kijiye, yeh {clinic_kind} hai, {problem} ka ilaaj yahan nahin hota. Aap {see} ko dikhaiye."
+
+# Always said after not_here: "If it suddenly gets worse, don't wait: go to the nearest hospital."
+safety_net = "Agar takleef achanak badh jaaye, to der mat kijiye, sabse paas ke aspataal jaaiye."
+
+# The doctor's status, from the receptionist's token board.
+# "The doctor is in. Number <n> is being seen now; <w> people are waiting."
+status_in = "Doctor sahab clinic mein hain. Abhi {now_serving} number chal raha hai, {waiting} log line mein hain."
+# "The doctor has left for today; he sits again <tomorrow / on Monday> from <time>."
+status_left = "Doctor sahab aaj ke liye ja chuke hain, ab {day_when} {posted_start} baje se baithenge."
+# "The clinic is closed today; the doctor sits again <tomorrow / on Monday> from <time>."
+status_closed = "Aaj clinic band hai, doctor sahab ab {day_when} {posted_start} baje se baithenge."
+# "The doctor hasn't come yet; he will be here by <time>."
+status_expected = "Doctor sahab abhi aaye nahin hain, {eta} baje tak aayenge."
+
+# When a booked caller should come.
+come_now = "Aap abhi aa jaaiye, aapse pehle {ahead} log hain."
+# "Please come <tomorrow / on Monday> at <time>."
+come_on_day = "Aap {day_when} {posted_start} baje aa jaaiye."
+come_later = "Doctor sahab {eta} baje tak aayenge, aap tab tak aa jaaiye."
+
+# When a person from the clinic joins or leaves the call.
+staff_joining = "Ek minute, main aapki baat {who} se karwa rahi hoon."
+staff_handback = "Ji, main Parchi, phir se aapke saath hoon. Boliye, aur kya madad kar sakti hoon?"
+
+# Words for a day inside a sentence: "today", "tomorrow", or the weekday (Monday first),
+# and the word that makes "on Monday" ("somvaar ko").
+[days]
+today = "aaj"
+tomorrow = "kal"
+on = "ko"
+weekdays = ["somvaar", "mangalvaar", "budhvaar", "guruvaar", "shukravaar", "shanivaar", "ravivaar"]

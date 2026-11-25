@@ -1,0 +1,45 @@
+# Secrets: never commit
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+
+# Node
+node_modules/
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/*
+!.vscode/extensions.json
+
+# Recordings are large: submit them separately, do not commit
+*.mp4
+*.mov
+*.mkv
+*.webm
+
+# Office lock files
+~$*
+
+# Claude Code local settings
+.claude/settings.local.json
+deliverables/build/
+working-slice/.env
+__pycache__/
+
+# Browser-tool screenshots and logs (local only)
+.playwright-mcp/
+
+# The call log: patient calls, transcripts and recordings. Never commit.
+working-slice/data/

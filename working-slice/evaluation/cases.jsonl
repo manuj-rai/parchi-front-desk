@@ -1,0 +1,74 @@
+{"id": "call-1", "text": "Doctor sahab aa gaye kya?", "intents": ["status"], "urgent": false, "source": "brief call 1"}
+{"id": "status-2", "text": "doctor kab tak aayenge, kitna time lagega", "intents": ["status"], "urgent": false}
+{"id": "status-3", "text": "डॉक्टर साहब आ गए क्या?", "intents": ["status"], "urgent": false, "source": "as transcribed (Devanagari)"}
+{"id": "status-4", "text": "ek minute... haan, doctor baithe hain abhi?", "intents": ["status"], "urgent": false}
+{"id": "status-5", "text": "abhi kitne number chal raha hai", "intents": ["status"], "urgent": false}
+{"id": "status-6", "text": "Is the doctor in today?", "intents": ["status"], "urgent": false}
+{"id": "book-1", "text": "kal subah ka number laga do", "intents": ["book"], "urgent": false, "day": "tomorrow"}
+{"id": "book-2", "text": "शाम का नंबर लगवाना है", "intents": ["book"], "urgent": false, "source": "as transcribed (Devanagari)"}
+{"id": "book-3", "text": "mere papa ke liye ek number chahiye aaj shaam ka", "intents": ["book"], "urgent": false}
+{"id": "call-7", "text": "Number laga dijiye, mujhe doctor se akele mein baat karni hai. Is number pe message mat bhejna.", "intents": ["book"], "urgent": false, "no_messages": true, "source": "brief call 7"}
+{"id": "call-7-devanagari", "text": "नंबर लगा दो, पर इस नंबर पे मैसेज मत भेजना", "intents": ["book"], "urgent": false, "no_messages": true, "source": "brief call 7, as transcribed"}
+{"id": "book-6", "text": "I want to book an appointment for tomorrow morning", "intents": ["book"], "urgent": false}
+{"id": "book-7", "text": "follow-up ke liye aana hai, number milega?", "intents": ["book"], "urgent": false}
+{"id": "info-1", "text": "consultation fees kitni hai?", "intents": ["info"], "urgent": false}
+{"id": "info-2", "text": "Sunday ko clinic khula rehta hai?", "intents": ["info"], "urgent": false}
+{"id": "info-3", "text": "clinic ka address kya hai", "intents": ["info"], "urgent": false}
+{"id": "info-4", "text": "फीस कितनी है", "intents": ["info"], "urgent": false, "source": "as transcribed (Devanagari)"}
+{"id": "info-5", "text": "shaam ko kitne baje tak baithte hain", "intents": ["info", "status"], "urgent": false}
+{"id": "call-3", "text": "Main Verma bol raha hoon, pichle hafte aaya tha, report aa gayi kya?", "intents": ["report"], "urgent": false, "source": "brief call 3"}
+{"id": "report-2", "text": "blood test ki report kab milegi", "intents": ["report"], "urgent": false}
+{"id": "report-3", "text": "दवाई की पर्ची खो गई, दोबारा मिल सकती है?", "intents": ["report", "other"], "urgent": false, "source": "as transcribed (Devanagari)"}
+{"id": "call-4", "text": "Sharma ji ka beta bol raha hoon. Doctor sahab ko bol dena paanch minute mein aa raha hoon.", "intents": ["other"], "urgent": false, "source": "brief call 4"}
+{"id": "call-6", "text": "Hello, I am a medical representative. When is the doctor free to meet?", "intents": ["other"], "urgent": false, "source": "brief call 6"}
+{"id": "other-3", "text": "galat number lag gaya sorry", "intents": ["other"], "urgent": false}
+{"id": "other-4", "text": "main pharma company se bol raha hoon, doctor sahab se milna tha", "intents": ["other"], "urgent": false}
+{"id": "other-5", "text": "pichli baar bahut der wait karna pada, complaint karni hai", "intents": ["other"], "urgent": false}
+{"id": "other-6", "text": "doctor sahab ko bolna mera phone aaya tha", "intents": ["other"], "urgent": false}
+{"id": "about-1", "text": "aap robot ho kya? insaan se baat karao", "intents": ["about_assistant"], "urgent": false}
+{"id": "about-2", "text": "kya main machine se baat kar raha hoon?", "intents": ["about_assistant"], "urgent": false}
+{"id": "unclear-1", "text": "haan woh... matlab... kal wala", "intents": ["unclear"], "urgent": false}
+{"id": "unclear-2", "text": "woh hi jo maine bola tha", "intents": ["unclear"], "urgent": false}
+{"id": "unclear-3", "text": "hmm... haan... nahi...", "intents": ["unclear"], "urgent": false}
+{"id": "medical-1", "text": "pet mein halka sa dard hai do din se, kab dikha sakte hain", "intents": ["book", "medical"], "urgent": false}
+{"id": "medical-2", "text": "khansi hai teen din se, kya dawai lun?", "intents": ["medical"], "urgent": false}
+{"id": "medical-3", "text": "sar dard ke liye koi goli bata do", "intents": ["medical"], "urgent": false}
+{"id": "call-5", "text": "Shaam ka number lagwana hai follow-up ke liye, naam Ramesh. Subah se seene mein thoda dard hai.", "intents": ["book", "medical"], "urgent": true, "source": "brief call 5"}
+{"id": "call-5-devanagari", "text": "शाम का नंबर लगवाना है, नाम रमेश, सुबह से सीने में थोड़ा दर्द है।", "intents": ["book", "medical"], "urgent": true, "source": "brief call 5, as transcribed"}
+{"id": "emergency-3", "text": "Meri maa ko saans lene mein bahut takleef ho rahi hai", "intents": ["medical"], "urgent": true}
+{"id": "emergency-4", "text": "Papa subah behosh ho gaye the, ab theek hain", "intents": ["medical", "book"], "urgent": true}
+{"id": "emergency-5", "text": "bachche ko daura pada tha abhi", "intents": ["medical"], "urgent": true}
+{"id": "emergency-6", "text": "naak se khoon band nahi ho raha", "intents": ["medical"], "urgent": true}
+{"id": "emergency-7", "text": "chhati mein bhaari pan lag raha hai aur pasina aa raha hai", "intents": ["medical"], "urgent": true}
+{"id": "emergency-8", "text": "मेरी मम्मी को सांस नहीं आ रही", "intents": ["medical"], "urgent": true, "source": "as transcribed (Devanagari)"}
+{"id": "call-2", "text": "Mera bachcha do saal ka hai, kal raat se 102 bukhar hai. Abhi lana zaroori hai ya shaam tak ruk sakte hain?", "intents": ["medical", "book"], "urgent": true, "source": "brief call 2"}
+{"id": "see-today-2", "text": "बच्चे को कल से तेज़ बुखार है, 103", "intents": ["medical"], "urgent": true, "source": "as transcribed (Devanagari)"}
+{"id": "see-today-3", "text": "subah se ulti band nahi ho rahi", "intents": ["medical"], "urgent": true}
+{"id": "see-today-4", "text": "teen saal ki beti ko bukhar hai", "intents": ["medical", "book"], "urgent": true}
+{"id": "harmless-1", "text": "seene ka x-ray report aa gaya kya?", "intents": ["report"], "urgent": false, "source": "alarm word, harmless context"}
+{"id": "harmless-2", "text": "pichle mahine bukhar tha, ab bilkul theek hoon, bas fees poochni thi", "intents": ["info"], "urgent": false, "source": "alarm word, harmless context"}
+{"id": "harmless-3", "text": "saans ki dawai khatam ho gayi, parchi dobara chahiye", "intents": ["report", "other", "medical"], "urgent": false, "source": "alarm word, harmless context"}
+{"id": "harmless-4", "text": "khoon ki jaanch ki report kab aayegi", "intents": ["report"], "urgent": false, "source": "alarm word, harmless context"}
+{"id": "scope-gp-teeth", "text": "Daant mein bahut dard hai, number milega?", "intents": ["book", "medical"], "urgent": false, "scope": "not_treated", "source": "general physician: teeth are not treated here"}
+{"id": "scope-gp-eyes", "text": "Aankh laal ho gayi hai, dikhana hai", "intents": ["book", "medical"], "urgent": false, "scope": "not_treated", "source": "general physician: eyes are not treated here"}
+{"id": "scope-gp-pregnancy", "text": "Meri wife pregnant hai, checkup karwana hai", "intents": ["book", "medical"], "urgent": false, "scope": "not_treated", "source": "general physician: pregnancy is not treated here"}
+{"id": "scope-gp-stomach", "text": "Pet kharab hai kal se, number laga do", "intents": ["book"], "urgent": false, "scope": "treated", "source": "general physician: stomach is treated here"}
+{"id": "scope-gp-bp", "text": "BP check karwana hai, kab aa sakta hoon?", "intents": ["book", "status", "info"], "urgent": false, "scope": "treated", "source": "general physician: blood pressure is treated here"}
+{"id": "scope-dental-tooth", "clinic": "dental", "text": "Daant mein dard hai, kal ka number milega?", "intents": ["book"], "urgent": false, "scope": "treated", "source": "dentist: teeth are treated here"}
+{"id": "scope-dental-child-fever", "clinic": "dental", "text": "Bachche ko kal se bukhar hai, dikhana hai", "intents": ["book", "medical"], "urgent": false, "scope": "not_treated", "source": "dentist: a child's fever is not treated here"}
+{"id": "scope-dental-stomach", "clinic": "dental", "text": "Pet mein dard hai, doctor sahab dekh lenge?", "intents": ["medical", "book"], "urgent": false, "scope": "not_treated", "source": "dentist: stomach is not treated here"}
+{"id": "scope-dental-chest-pain", "clinic": "dental", "text": "Seene mein dard ho raha hai, aapke yahan dikha sakta hoon?", "intents": ["book", "medical"], "urgent": true, "scope": "not_treated", "source": "dentist: an emergency is still an emergency"}
+{"id": "scope-ent-ear", "clinic": "ent", "text": "Kaan mein dard hai teen din se, number chahiye", "intents": ["book"], "urgent": false, "scope": "treated", "source": "ENT: ears are treated here"}
+{"id": "scope-ent-knee", "clinic": "ent", "text": "Mere ghutne mein dard hai, dikhana hai", "intents": ["medical", "book"], "urgent": false, "scope": "not_treated", "source": "ENT: knees are not treated here"}
+{"id": "scope-ent-eyes", "clinic": "ent", "text": "Aankh mein jalan ho rahi hai", "intents": ["medical", "book"], "urgent": false, "scope": "not_treated", "source": "ENT: eyes are not treated here"}
+{"id": "scope-ent-sudden-deafness", "clinic": "ent", "text": "Achanak se ek kaan se sunai dena band ho gaya", "intents": ["medical", "book"], "urgent": true, "scope": "treated", "source": "ENT: the doctor's see-today rule"}
+{"id": "scope-dental-asthma", "clinic": "dental", "text": "Dame ki dawai ka parcha chahiye, doctor sahab likh denge?", "intents": ["medical", "report", "other", "book"], "urgent": false, "scope": "not_treated", "source": "dentist: asthma is not treated here"}
+{"id": "scope-gp-palpitations", "text": "Kabhi kabhi dil ki dhadkan tez ho jaati hai, dikhana hai", "intents": ["book", "medical"], "urgent": false, "scope": "treated", "source": "general physician: palpitations are treated here"}
+{"id": "my-booking-1", "text": "Mera number kya tha? Subah lagwaya tha", "intents": ["my_booking"], "urgent": false}
+{"id": "my-booking-2", "text": "मेरा नंबर कब आएगा?", "intents": ["my_booking", "status"], "urgent": false, "source": "as transcribed (Devanagari)"}
+{"id": "my-booking-3", "text": "Kya mera number laga hua hai kal ke liye?", "intents": ["my_booking"], "urgent": false}
+{"id": "cancel-1", "text": "Aaj nahin aa paunga, mera number cancel kar dijiye", "intents": ["cancel"], "urgent": false}
+{"id": "cancel-2", "text": "Papa ka appointment cancel karna hai", "intents": ["cancel"], "urgent": false}
+{"id": "book-day-today", "text": "Aaj shaam ka number chahiye", "intents": ["book"], "urgent": false, "day": "today"}
+{"id": "book-day-since-yesterday", "text": "Kal se pet kharab hai, aaj dikhana hai", "intents": ["book", "medical"], "urgent": false, "day": "today", "source": "\"kal se\" means since yesterday, not tomorrow"}
+{"id": "book-day-tomorrow-evening", "text": "Kal shaam ke liye ek number laga dijiye", "intents": ["book"], "urgent": false, "day": "tomorrow"}
